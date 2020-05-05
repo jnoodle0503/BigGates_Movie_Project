@@ -1,25 +1,23 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
 <script type="text/javascript">
-      $(document).ready(function(){
-         $("#header").load("./recoMoviePopup.jsp");
-        /* id 지정을 통해서도 가능합니다. 
-         $("#header").load("header.html #navbar")
-         */       
-      });
+     window.onload = function() {
+    	 var popUrl ="./recoMoviePopup.jsp";
+         var popOption = "width=680px, height=380px, resizable=no, location=no, top=300px, left=300px;"
+            
+            window.open(popUrl,"추천영화",popOption); 
+     }
 </script> 
 
 
 </head>
 <body>
 	<h1>메인 페이지</h1>
-
-
-	<div id="header"></div>
 
 
 </body>
