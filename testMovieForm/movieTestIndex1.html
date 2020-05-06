@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="./styles/recoMoviePopupTest1Style.css">
+
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<script src="//code.jquery.com/jquery.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+</style>
+
+</head>
+<body>
+	<h1>메인 페이지</h1>
+
+	<div id="recoMovie"></div>
+	<script type="text/javascript">
+		$(document)
+				.ready(
+						function() {
+
+							var mobileArr = new Array("iPhone", "iPod",
+									"BlackBerry", "Android", "Windows CE",
+									"LG", "MOT", "SAMSUNG", "SonyEricsson");
+							for ( var txt in mobileArr) {
+								if (navigator.userAgent.match(mobileArr[txt]) != null) {
+									// 작업
+									$("#recoMovie").load(
+											"./recoMoviePopupTest1.jsp");
+									break;
+								} else {
+									var popUrl = "./recoMoviePopup.jsp";
+									var popOption = "width=680px, height=380px, resizable=no, location=no, top=300px, left=300px;"
+
+									window.open(popUrl, "추천영화", popOption);
+									break;
+								}
+
+							}
+
+							//$("#modalBtn").click();
+						})
+	</script>
+
+</body>
+
+</html>

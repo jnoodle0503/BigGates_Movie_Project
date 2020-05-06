@@ -87,7 +87,7 @@
 			String outlineArr[] = dscOutline[x][y].split("\\|");
 
 			// 나중에 정렬할 때 쓸 수도 있음(날짜정렬)
-			dscDate[x][y] = outlineArr[2].substring(0, outlineArr[2].indexOf("개봉"));
+			// dscDate[x][y] = outlineArr[2].substring(0, outlineArr[2].indexOf("개봉"));
 
 			dscGenre[x][y] = outlineArr[0];
 
