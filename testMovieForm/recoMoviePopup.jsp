@@ -104,7 +104,7 @@
 	%>
 	<div class="container">
 		<div class="jumbotron">
-			<form action="recoMovieAction.jsp" method="post">
+			<form id="recoMovieForm" action="recoMovieAction.jsp" method="post">
 				<%
 					String recoMovie[] = new String[5];
 				String splitStr = "^";
@@ -169,10 +169,20 @@
 		</div>
 		<div class="submitBtn">
 			<p>
-				<input class="btn btn-lg btn-success" type="submit" value="관심 영화 등록" />
+				<input class="btn btn-lg btn-success" id="submitBtn" type="button" value="관심 영화 등록" />
 			</p>
 		</div>
 	</div>
+	<script>
+		const submitBtn = document.getElementById("submitBtn");
+		const recoMovieForm = document.getElementById("recoMovieForm");
+		submitBtn.addEventListener("click", handleSubmit);
+		function handleSubmit() {
+			recoMovieForm.submit();
+		}
+		
+		
+	</script>
 
 </body>
 </html>

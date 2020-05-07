@@ -15,13 +15,19 @@ input[type="checkbox"][id^="thumb"] {
   display: none;
 }
 
-.modal-header {
-	background-color: red;
+.titleLogoImg {
+	width: 60px;
+	height: 60px;
+}
+
+.firstImg {
+	width: 40%;
+	height: 180px;
 }
 
 .item {
   position:absolute;
-  transform:translate(32%, 10%)
+  transform:translate(32%, 10%);
 }
 
 .tit {

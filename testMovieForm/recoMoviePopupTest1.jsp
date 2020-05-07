@@ -30,7 +30,10 @@
 
 								<div class="modal-header">
 									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-									<h4 class="modal-title">Modal title</h4>
+									<h4 class="modal-title">
+									<img class="titleLogoImg" src="./images/smallMovieLogo2.png">
+									오늘의 추천 영화
+									</h4>
 
 								</div>
 								<div class="modal-body">
@@ -39,7 +42,10 @@
 										<!-- Wrapper for slides -->
 										<div class="carousel-inner">
 											<div class="item active">
-													<p>오늘의 추천 영화를 만나보세요</p>
+												<div>
+													<img class="firstImg" src="./images/movieLogo2.png">
+												</div>
+												
 											</div>
 											<%
 												/*
