@@ -11,7 +11,7 @@
 </head>
 <body>
 	<%
-		request.setCharacterEncoding("utf-8");
+	request.setCharacterEncoding("utf-8");
 
 	String recoMovie[] = request.getParameterValues("checkbox");
 	String recoMovieList[] = new String[40];
